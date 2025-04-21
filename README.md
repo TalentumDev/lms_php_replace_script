@@ -23,8 +23,6 @@ Ensure the script `replace_script.sh` has the necessary execution permissions. U
 
 ```
 chmod +x replace_script.sh
-
-chmod 755 replace_script.sh
 ```
 
 ## Script Execution
