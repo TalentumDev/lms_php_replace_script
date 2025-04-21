@@ -4,7 +4,7 @@
 ruta_original="/apps/moodle/moodle/theme/remui/classes/output/core_renderer.php"
 
 # Ruta del archivo nuevo
-ruta_nuevo="/media/SSD/core_renderer.php"
+ruta_nuevo="/media/SSD/lms_php_replace_script/core_renderer.php"
 
 # Ruta backup
 ruta_bak="/apps/moodle/moodle/theme/remui/classes/output/core_renderer.php.bak"
@@ -39,8 +39,8 @@ if [ $? -ne 0 ]; then
 fi
 echo "Archivo reemplazado exitosamente."
 
-# Cambiar el owner del archivo
-echo "Cambiando el owner del archivo..."
+# Cambiar el propietario del archivo
+echo "Cambiando el propietario del archivo..."
 chown www-data:www-data "$ruta_original"
 if [ $? -ne 0 ]; then
     echo "Error al cambiar el propietario del archivo."
